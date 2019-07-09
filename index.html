@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Teamfight Tactics Item Cheatsheet</title>
+<style>
+    body {
+        background-color: #031733;
+    }
+    #itemChart{
+        padding: 200px;
+    }
+    #tags{
+        color: #03396C;
+        font-size: 12px;
+        font-family: georgia;
+    }
+    img {
+        opacity: 0.3;
+        filter: alpha(opacity=30); /* For IE8 and earlier */
+    }
+    img:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+</style>
+
+</head>
+
+<body>
+    <div id="tags">TFT Item Cheatsheet by William Yu </div>
+    <div id="tags">https://github.com/williamyuuu </div>
+    <div id="itemChart">
+        <img class="items" src="images/BF_Sword_item.png" alt="BFSword" onclick="myFunction(0)" >
+        <img class="items" src="images/Chain_vest_item.png" alt="Chainvest" onclick="myFunction(1)" >
+        <img class="items" src="images/Giants_Belt_item.png" alt="Belt" onclick="myFunction(2)" >
+        <img class="items" src="images/Needlessly_Large_Rod_item.png" alt="LargeRod" onclick="myFunction(3)" >
+        <br>
+        <img class="items" src="images/Negatron_Cloak_item.png" alt="Negatron" onclick="myFunction(4)" >
+        <img class="items" src="images/Recurve_Bow_item.png" alt="Recurve" onclick="myFunction(5)" >
+        <img class="items" src="images/Tear_Goddess_item.png" alt="Tear" onclick="myFunction(6)" >
+        <img class="items" src="images/Spatula_item.png" alt="Spatula" width="64" height="64" onclick="myFunction(7)" >
+    </div>
+
+<script>
+function myFunction(num) {
+    var originalStyle = document.getElementsByClassName("items").style;
+    var x = document.getElementsByClassName("items");
+    if(x[num].style.opacity != "1"){
+        x[num].style.opacity = "1";
+        /* potentially add it so that it still glows on selected over*/
+
+    }
+    else{
+        x[num].style = originalStyle;
+
+    }
+}
+</script>
+
+</body>
+
+</html>
