@@ -1,0 +1,8 @@
+# Tester files
+tester*
+
+# Notes files
+*.notes
+
+# File DS_Store not be pushed
+*.DS_Store
